@@ -1,0 +1,157 @@
+<div class="container">
+  <div class="row categories">
+    <mat-tab-group>
+      <mat-tab label="Communication">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of professionalCommunicationExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Excellence">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of professionalCommunicationExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Professionalism">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of professionalProExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+    <!-- <h2 class="color"><u>Communication</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of professionalCommunicationExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="professionalExcellenceExpectations">
+    <h2 class="color"><u>Excellence</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of professionalExcellenceExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="professionalProExpectations">
+    <h2 class="color"><u>Professionalism</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of professionalProExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class='card'>
+    <div class='card-header'>
+      {{ pageTitle }}
+    </div>
+    <div class='card-body'>
+      <div class='table-responsive'>
+        <table class='table' *ngIf='cohorts && cohorts.length'>
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let cohort of cohorts'>
+              <td><a [routerLink]="['/cohort', cohort.Cohort]">{{ cohort.Cohort }}</a></td>
+              <td>{{ cohort.Type }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='errorMessage' class='alert alert-danger'>
+    Error: {{ errorMessage }}
+  </div>
+</div>

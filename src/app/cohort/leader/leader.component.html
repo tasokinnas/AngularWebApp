@@ -1,0 +1,259 @@
+<div class="container-fluid">
+  <div class="row categories">
+    <mat-tab-group>
+      <mat-tab label="Account Leadership">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of leaderAccountExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Allata Service">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of leaderAccountExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Profit">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of leaderProfitExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Project Leadership">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of leaderProjectExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Servant Leadership">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of leaderServantExpectations">
+                  <tr>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                    <td
+                      *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+    <!-- <h2 class="color"><u>Account Leadership</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of leaderAccountExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="leaderAllataExpectations">
+    <h2 class="color"><u>Allata Service</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of leaderAllataExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="leaderProfitExpectations">
+    <h2 class="color"><u>Profit</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of leaderProfitExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="leaderProjectExpectations">
+    <h2 class="color"><u>Project Leadership</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of leaderProjectExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row category2" *ngIf="leaderServantExpectations">
+    <h2 class="color"><u>Servant Leadership</u></h2>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of leaderServantExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  {{expectation.Description}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,261 @@
+<div class="container">
+  <div class="row categories">
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="Advocating Services">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorAdvocateExpectations">
+                    <tr>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Community Stewardship">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorCommunityExpectations">
+                    <tr>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Connecting with People">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorConnectExpectations">
+                    <tr>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Integrity">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorIntegrityExpectations">
+                    <tr>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Partnership">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorPartnershipExpectations">
+                    <tr>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                      <td
+                        *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+      <!-- <h2 class="color"><u>Advocating Services</u></h2>
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody class="text-left" *ngFor="let expectation of advisorAdvocateExpectations">
+                <tr>
+                  <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                    <b>{{expectation.SubCategory}}</b></td>
+                    <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      {{expectation.Description}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row category2" *ngIf="advisorCommunityExpectations">
+          <h2 class="color"><u>Community Stewardship</u></h2>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left" *ngFor="let expectation of advisorCommunityExpectations">
+                    <tr>
+                      <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        <b>{{expectation.SubCategory}}</b></td>
+                        <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                          {{expectation.Description}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row category2" *ngIf="advisorConnectExpectations">
+              <h2 class="color"><u>Connecting with People</u></h2>
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-left" *ngFor="let expectation of advisorConnectExpectations">
+                        <tr>
+                          <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                            <b>{{expectation.SubCategory}}</b></td>
+                            <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                              {{expectation.Description}}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row category2" *ngIf="advisorIntegrityExpectations">
+                  <h2 class="color"><u>Integrity</u></h2>
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Category</th>
+                              <th>Description</th>
+                            </tr>
+            </thead>
+            <tbody class="text-left" *ngFor="let expectation of advisorIntegrityExpectations">
+              <tr>
+                <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                  <b>{{expectation.SubCategory}}</b></td>
+                  <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                    {{expectation.Description}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row category2" *ngIf="advisorPartnershipExpectations">
+        <h2 class="color"><u>Partnership</u></h2>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left" *ngFor="let expectation of advisorPartnershipExpectations">
+                  <tr>
+                    <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                      <b>{{expectation.SubCategory}}</b></td>
+                      <td *ngIf="expectation.SubCategory != expectation.Description[0] && expectation.Description != 'NA'">
+                        {{expectation.Description}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div> -->
+    </div>
+  </div>
+</div>

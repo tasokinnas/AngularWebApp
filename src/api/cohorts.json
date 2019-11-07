@@ -1,0 +1,72 @@
+[
+  {
+    "Cohort_Role": "Staff",
+    "Cohort_Level": "Jr Staff Member",
+    "Cohort_ID": 1
+  },
+  {
+    "Cohort_Role": "Staff",
+    "Cohort_Level": "Staff member",
+    "Cohort_ID": 2
+  },
+  {
+    "Cohort_Role": "Staff",
+    "Cohort_Level": "Sr Staff Member",
+    "Cohort_ID": 3
+  },
+  {
+    "Cohort_Role": "Consultant",
+    "Cohort_Level": "Consultant",
+    "Cohort_ID": 4
+  },
+  {
+    "Cohort_Role": "Consultant",
+    "Cohort_Level": "Sr Consultant",
+    "Cohort_ID": 5
+  },
+  {
+    "Cohort_Role": "Associate",
+    "Cohort_Level": "Associate",
+    "Cohort_ID": 6
+  },
+  {
+    "Cohort_Role": "Associate",
+    "Cohort_Level": "Sr Associate",
+    "Cohort_ID": 7
+  },
+  {
+    "Cohort_Role": "Manager",
+    "Cohort_Level": "Manager",
+    "Cohort_ID": 8
+  },
+  {
+    "Cohort_Role": "Manager",
+    "Cohort_Level": "Sr Manager",
+    "Cohort_ID": 9
+  },
+  {
+    "Cohort_Role": "Principal",
+    "Cohort_Level": "Principal",
+    "Cohort_ID": 10
+  },
+  {
+    "Cohort_Role": "Principal",
+    "Cohort_Level": "Sr Principal",
+    "Cohort_ID": 11
+  },
+  {
+    "Cohort_Role": "Vice President",
+    "Cohort_Level": "Vice President",
+    "Cohort_ID": 12
+  },
+  {
+    "Cohort_Role": "Vice President",
+    "Cohort_Level": "Sr Vice President",
+    "Cohort_ID": 13
+  },
+  {
+    "Cohort_Role": "CxO",
+    "Cohort_Level": "CxO",
+    "Cohort_ID": 14
+  }
+]

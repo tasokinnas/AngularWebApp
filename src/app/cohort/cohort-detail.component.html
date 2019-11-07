@@ -1,0 +1,74 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-md-6'>
+      <div class='card'>
+        <div class='card-header'>
+          {{ pageTitle + ': ' + cohortLevel }}
+        </div>
+        <div class='card-body text-center'>
+          <!-- <nav mat-tab-nav-bar>
+            <a mat-tab-link [routerLink]="/professional">Professional</a>
+            <a mat-tab-link [routerLink]="/architect">Architect</a>
+            <a mat-tab-link [routerLink]="/leader">Leader</a>
+            <a mat-tab-link [routerLink]="/playercoach">Player/Coach</a>
+            <a mat-tab-link [routerLink]="/advisor">Advisor</a>
+          </nav mat-tab-nav-bar> -->
+          <!-- <mat-tab-group>
+            <mat-tab label="Professional">
+              <app-professional></app-professional>
+            </mat-tab>
+            <mat-tab label="Architect">
+              <a [routerLink]="['architect']" routerLinkActive="active">Architect</a>
+            </mat-tab>
+            <mat-tab label="Leader">
+              <a [routerLink]="['leader']" routerLinkActive="active">Leader</a>
+            </mat-tab>
+            <mat-tab label="Player/Coach">
+              <a [routerLink]="['playercoach']" routerLinkActive="active">Player/Coach</a>
+            </mat-tab>
+            <mat-tab label="Advisor">
+              <a [routerLink]="['advisor']" routerLinkActive="active">Advisor</a>
+            </mat-tab>
+          </mat-tab-group> -->
+          <div class="wizard">
+
+            <a [routerLink]="['professional']" routerLinkActive="active">Professional</a>
+            <a [routerLink]="['architect']" routerLinkActive="active">Architect</a>
+            <a [routerLink]="['leader']" routerLinkActive="active">Leader</a>
+            <a [routerLink]="['playercoach']" routerLinkActive="active">Player/Coach</a>
+            <a [routerLink]="['advisor']" routerLinkActive="active">Advisor</a>
+
+            <!-- <button (click)="selection='professional'">Professional</button>
+              <button (click)="selection='professional'">Professional</button>
+              <button (click)="selection='professional'">Professional</button>
+              <button (click)="selection='professional'">Professional</button>
+              <button (click)="selection='professional'">Professional</button> -->
+
+            <!-- <app-professional [selection]="selection"></app-professional> -->
+          </div>
+          <router-outlet name="primary"></router-outlet>
+        </div>
+      </div>
+    </div>
+    <div class='col-md-6'>
+      <div class='card'>
+        <div class='card-header'>
+          {{ pageTitle + ': ' + nextCohortLevel }}
+        </div>
+        <div class='card-body text-center'>
+          <div class="wizard">
+            <!-- <app-professional></app-professional> -->
+
+            <a [routerLink]="[{ outlets: { popup: ['nextprofessional'] }}]" routerLinkActive="active">Professional</a>
+            <a [routerLink]="[{ outlets: { popup: ['nextarchitect'] }}]" routerLinkActive="active">Architect</a>
+            <a [routerLink]="[{ outlets: { popup: ['nextleader'] }}]" routerLinkActive="active">Leader</a>
+            <a [routerLink]="[{ outlets: { popup: ['nextplayercoach'] }}]" routerLinkActive="active">Player/Coach</a>
+            <a [routerLink]="[{ outlets: { popup: ['nextadvisor'] }}]" routerLinkActive="active">Advisor</a>
+
+          </div>
+          <router-outlet name="popup"></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
